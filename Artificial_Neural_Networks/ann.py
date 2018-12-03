@@ -1,5 +1,6 @@
 # Artificial Neural Network
 
+# Part 1 - Data Preprocessing
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -30,8 +31,13 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-# Fitting classifier to the Training set
-# Create your classifier here
+# Part 2 - Now let's make the ANN!
+# Importing the Keras libraries and packages
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
